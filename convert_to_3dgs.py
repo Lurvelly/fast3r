@@ -90,7 +90,7 @@ if __name__ == "__main__":
     # parser.add_argument('--input_dir', '-s', type=str, default="/data/lurvelly/Louis/Datasets/tandt_db/tandt/truck", help='Directory containing images or video')
     parser.add_argument('--input_dir', '-s', type=str, default="demo_examples/family/Family.mp4", help='Directory containing images or video')
     parser.add_argument('--output_dir', '-o', type=str, default="fast3r_colmap", help='Directory to store the results')
-    parser.add_argument('--min_conf_thr', type=int, default=85, help="percentile between 0 - 100")
+    parser.add_argument('--min_conf_thr', type=int, default=50, help="percentile between 0 - 100")
     parser.add_argument('--use_align', type=bool, default=False, help="Whether use align_local_pts3d_to_global method")
     args = parser.parse_args()
 
